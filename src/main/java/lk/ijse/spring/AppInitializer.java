@@ -23,13 +23,6 @@ public class AppInitializer {
         System.out.println(db1);
         System.out.println(db2);
 
-
-//        DBConnection iman1 = ctx.getBean(DBConnection.class);
-//        DBConnection iman2 = ctx.getBean(DBConnection.class);
-//        System.out.println(iman1);
-//        System.out.println(iman2);
-//        iman1.TestConnection();
-
         ctx.close();
     }
 }
