@@ -4,6 +4,7 @@ import lk.ijse.spring.config.AppConfig;
 import lk.ijse.spring.pojo.BasicDataSource;
 import lk.ijse.spring.pojo.Customer;
 import lk.ijse.spring.pojo.DBConnection;
+import lk.ijse.spring.pojo.PojoOne;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AppInitializer {
@@ -36,6 +37,14 @@ public class AppInitializer {
 
         Customer customer = (Customer) ctx.getBean("customer");
         System.out.println(customer);
+
+        PojoOne pojoOne = (PojoOne) ctx.getBean("pojoOne");
+        System.out.println(pojoOne);
+
+        // How the @Bean beanID created?
+        //generate beanID with bean method name
+        BasicDataSource bds = (BasicDataSource) ctx.getBean("dd");
+        System.out.println(bds);
 
         ctx.close();
     }

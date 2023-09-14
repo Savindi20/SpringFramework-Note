@@ -15,7 +15,7 @@ public class AppConfig {
 
 
     @Bean
-    public BasicDataSource basicDataSource(){
+    public BasicDataSource dd(){
         return new BasicDataSource();
     }
 }
