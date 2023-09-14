@@ -35,7 +35,7 @@ public class AppInitializer {
         //Customer -> customer(beanID) get the class name then
         // convert the first letter into simple letter
 
-        Customer customer = (Customer) ctx.getBean("customer");
+        Customer customer = (Customer) ctx.getBean("ijse");
         System.out.println(customer);
 
         PojoOne pojoOne = (PojoOne) ctx.getBean("pojoOne");
