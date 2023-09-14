@@ -9,7 +9,7 @@ public class Customer {
     }
 
 
-    public void GetCustomerName(){
+    public void getCustomerName(){
 
         System.out.println("Customer Name is Sunil");
     }
