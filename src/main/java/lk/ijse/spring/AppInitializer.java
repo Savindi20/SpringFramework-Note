@@ -60,5 +60,6 @@ public class AppInitializer {
         ctx.registerShutdownHook();
 
         Customer bean = ctx.getBean(Customer.class);
+        System.out.println(bean);
     }
 }
