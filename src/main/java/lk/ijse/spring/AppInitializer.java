@@ -47,5 +47,7 @@ public class AppInitializer {
         System.out.println(bds);
 
         ctx.close();
+
+        ctx.getBean(Customer.class);
     }
 }
